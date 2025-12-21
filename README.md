@@ -1,33 +1,52 @@
-Rock Paper Scissors – Console Game
+## Rock Paper Scissors (Console Game)
 
-A JavaScript console game built as part of The Odin Project curriculum.
+This project is a console-based Rock Paper Scissors game built as part of The Odin Project JavaScript Foundations curriculum.
 
-📖 Description
+The game is played entirely in the browser console and focuses on core JavaScript concepts such as functions, conditionals, loops, and scope.
 
-A simple Rock Paper Scissors game played against the computer in the browser console.
-The project focuses on JavaScript fundamentals such as functions, conditionals, randomness, and score tracking.
+## 📖 Description
 
-⸻
+The goal of this project was to implement the logic for a classic Rock Paper Scissors game where a human player competes against the computer over five rounds.
 
-🛠️ Built With
-• JavaScript (ES6)
-• HTML5
-• Browser Console
+The player provides input via a prompt, the computer generates a random choice, and the game keeps track of scores before declaring a final winner.
 
-⸻
+## 🎮 How the Game Works
 
-🎯 What I Practiced
-• Writing reusable functions
-• Using Math.random() for logic
-• Handling user input with prompt()
-• Case-insensitive comparisons
-• Tracking scores across rounds
+    1.	The player is prompted to enter rock, paper, or scissors
+    2.	The computer randomly selects one of the three options
+    3.	Each round determines a winner based on standard rules
+    4.	Scores are updated after each round
+    5.	After 5 rounds, the final winner is announced in the console
 
-⸻
+## 🛠️ Built With
 
-▶️ How to Run 1. Open index.html in a browser 2. Open the Developer Console 3. Follow the prompts to play
+    •	JavaScript (ES6)
+    •	HTML5 (minimal setup)
+    •	Browser Console
 
-⸻
+## 🎯 What I Practiced
 
-🙌 Acknowledgements
-Part of The Odin Project – JavaScript Foundations.
+    •	Writing reusable functions
+    •	Using Math.random() for randomized behavior
+    •	Handling user input with prompt()
+    •	Applying conditional logic to determine outcomes
+    •	Tracking state with variables and function scope
+    •	Looping through multiple game rounds
+    •	Logging meaningful output to the console
+
+## ▶️ How to Run
+
+    1.	Clone the repository
+    2.	Open index.html in a browser
+    3.	Open the browser developer console
+    4.	Follow the prompts to play the game
+
+## 📌 Notes
+
+    •	This version of the game does not include a graphical interface
+    •	Input validation is minimal, as per curriculum requirements
+    •	The game logic is intentionally kept simple and readable
+
+## ⭐ Acknowledgements
+
+This project is part of The Odin Project Foundations course.
