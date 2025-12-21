@@ -1,3 +1,6 @@
+let humanSelection = getHumanChoice();
+let computerSelection = getComputerChoice();
+
 function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3);
 
@@ -15,3 +18,6 @@ function getHumanChoice() {
   choice = choice.toLowerCase();
   return choice;
 }
+
+let humanScore = 0;
+let computerScore = 0;
