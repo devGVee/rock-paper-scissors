@@ -3,11 +3,16 @@ let computerScore = 0;
 
 const resultsDiv = document.querySelector("#results");
 const resultPara = document.createElement("p");
+const scorePara = document.createElement("p");
 
-resultsDiv.appendChild(resultPara);
+resultsDiv.append(resultPara, scorePara);
 
 function getComputerChoice() {
   return ["rock", "paper", "scissors"][Math.floor(Math.random() * 3)];
+}
+
+function updateScore() {
+  scorePara.textContent = `You: ${humanScore} | Computer: ${computerScore}`;
 }
 
 function playRound(humanChoice, computerChoice) {
@@ -24,6 +29,8 @@ function playRound(humanChoice, computerChoice) {
     resultPara.textContent = "You lose!";
     computerScore++;
   }
+
+  updateScore();
 }
 
 document.querySelectorAll("button").forEach((button) => {
