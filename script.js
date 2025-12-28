@@ -6,19 +6,14 @@ function getComputerChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
-  if (humanChoice === computerChoice) {
-    console.log("It's a tie");
-  } else if (
-    (humanChoice === "rock" && computerChoice === "scissors") ||
-    (humanChoice === "paper" && computerChoice === "rock") ||
-    (humanChoice === "scissors" && computerChoice === "paper")
-  ) {
-    console.log("You win!");
-    humanScore++;
-  } else {
-    console.log("You lose!");
-    computerScore++;
-  }
-
-  console.log(`Score: You ${humanScore} - Computer ${computerScore}`);
+  console.log(`You chose ${humanChoice}`);
+  console.log(`Computer chose ${computerChoice}`);
 }
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    playRound(button.id, getComputerChoice());
+  });
+});
